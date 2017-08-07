@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color: #EEEEEE;
+	font-family: "wf_SegoeUILight", "wf_SegoeUI", "Segoe UI Light", "Segoe WP Light", "Segoe UI", "Segoe", "Segoe WP", "Tahoma", "Verdana", "Arial", "sans-serif";
+}
+h1 {
+	letter-spacing: 2px;
+}
+.btn:hover:not(.btn-link) {
+	background-color: #CDCDCD;
+}
+.btn-link {
+	color: black;
+}
+.piece {
+	filter: grayscale(20%);
+	background-size: 396% 396%;
+	padding-bottom: 25%;
+	transition: all ease-in-out 0.3s, outline 0s;
+	cursor: pointer;
+	position: absolute;
+}
+.shutter {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	padding-top: 45%;
+	background-color: rgba(255,255,255,0.7);
+	width: 100%;
+}
+.off {
+	display: block;
+}
+#playbox {
+	position: relative;
+	cursor: pointer;
+	padding-bottom: 100%;
+}
+.outlined {
+	outline: 2px solid #EEEEEE;
+	outline-offset: -2px;
+}
+.shine {
+	filter: brightness(110%);
+}
+.number {
+	font-family: "Open Sans";
+	font-weight: bold;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: rgba(0,0,0,0.2);
+	color: rgba(255,255,255,0.7);
+	position: absolute;
+	left: 0;
+	transition: all ease-in-out 0.1s;
+}
+
+@media screen and (max-width: 768px) {
+.number {
+	font-size: 10vw;
+	padding-top: 1vw;
+}
+}
+
+@media screen and (min-width:768px) {
+.number {
+	font-size: 4vw;
+	padding-top: 1vh;
+}
+}
+.fade{
+	opacity:0;
+}
