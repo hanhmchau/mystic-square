@@ -15,7 +15,7 @@ var images = [
 	"resource/cup.png",
 	"resource/tree.png",
 	"resource/cat.png",
-	"resource/Eevee.jpg"
+	"resource/eevee.jpg"
 ];
 var currentImage = "url(" + images[Math.floor(Math.random() * images.length)] + ")";
 
